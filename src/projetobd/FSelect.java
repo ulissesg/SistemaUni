@@ -416,10 +416,6 @@ public class FSelect extends javax.swing.JFrame {
         jBDel = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTXAExcluido = new javax.swing.JTextArea();
-        jPanel7 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTAList = new javax.swing.JTextArea();
-        jBAtualizar = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jTabbedPane6 = new javax.swing.JTabbedPane();
         jPanel30 = new javax.swing.JPanel();
@@ -476,7 +472,7 @@ public class FSelect extends javax.swing.JFrame {
         jTP = new javax.swing.JTabbedPane();
         jPanelInserir = new javax.swing.JPanel();
         jLDisciplina = new javax.swing.JLabel();
-        jTFSelect = new javax.swing.JTextField();
+        jTFDisciplina = new javax.swing.JTextField();
         jLNtFinal = new javax.swing.JLabel();
         jTFNtFinal = new javax.swing.JTextField();
         jLSituacao = new javax.swing.JLabel();
@@ -489,7 +485,7 @@ public class FSelect extends javax.swing.JFrame {
         jBInserir4 = new javax.swing.JButton();
         jPanelEditar = new javax.swing.JPanel();
         jLDisciplina1 = new javax.swing.JLabel();
-        jTFSelectEdit = new javax.swing.JTextField();
+        jTFDisciplinaEdit = new javax.swing.JTextField();
         jLNtFinal1 = new javax.swing.JLabel();
         jTFNtFinalEdit = new javax.swing.JTextField();
         jLSituacao1 = new javax.swing.JLabel();
@@ -1311,9 +1307,8 @@ public class FSelect extends javax.swing.JFrame {
                         .addGap(620, 620, 620))
                     .addGroup(jPanel37Layout.createSequentialGroup()
                         .addGroup(jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.CENTER, jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                                .addComponent(jTFFkIdDepartamento)
-                                .addComponent(jBInserir6))
+                            .addComponent(jTFFkIdDepartamento, javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jBInserir6, javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(jTFNomeProf, javax.swing.GroupLayout.Alignment.CENTER))
                         .addContainerGap())))
         );
@@ -2090,9 +2085,8 @@ public class FSelect extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.CENTER, jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addComponent(jTFRequesito, javax.swing.GroupLayout.DEFAULT_SIZE, 707, Short.MAX_VALUE)
-                        .addComponent(jBInserir2))
+                    .addComponent(jTFRequesito, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.DEFAULT_SIZE, 707, Short.MAX_VALUE)
+                    .addComponent(jBInserir2, javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jTFHoras, javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jTFModalidadeDisc, javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jTFData, javax.swing.GroupLayout.Alignment.CENTER)
@@ -2604,19 +2598,21 @@ public class FSelect extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jBBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTXFGrrbusca))
-                .addContainerGap())
-            .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jLabel5)
                 .addContainerGap(692, Short.MAX_VALUE))
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 706, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jBBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTXFGrrbusca)))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 706, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2658,19 +2654,21 @@ public class FSelect extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jBDel)
-                    .addComponent(jTXFGrrDel))
-                .addContainerGap())
-            .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(jLabel6)
                 .addContainerGap(692, Short.MAX_VALUE))
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 706, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jBDel)
+                            .addComponent(jTXFGrrDel)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 706, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2687,46 +2685,6 @@ public class FSelect extends javax.swing.JFrame {
         );
 
         jTabbedPane2.addTab("Deletar", jPanel6);
-
-        jPanel7.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jPanel7FocusGained(evt);
-            }
-        });
-
-        jTAList.setColumns(20);
-        jTAList.setRows(5);
-        jScrollPane3.setViewportView(jTAList);
-
-        jBAtualizar.setText("Atualizar");
-        jBAtualizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBAtualizarActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jBAtualizar)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 707, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(147, Short.MAX_VALUE)
-                .addComponent(jBAtualizar)
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        jTabbedPane2.addTab("Lista de alunos", jPanel7);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -3087,7 +3045,7 @@ public class FSelect extends javax.swing.JFrame {
                     .addComponent(jTFVzCursada)
                     .addComponent(jTFSituacao)
                     .addComponent(jTFNtFinal)
-                    .addComponent(jTFSelect))
+                    .addComponent(jTFDisciplina))
                 .addContainerGap())
             .addGroup(jPanelInserirLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
@@ -3106,7 +3064,7 @@ public class FSelect extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLDisciplina)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTFSelect, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTFDisciplina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16)
                 .addComponent(jLNtFinal)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3180,7 +3138,7 @@ public class FSelect extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEditarLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTFSelectEdit)
+                .addComponent(jTFDisciplinaEdit)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEditarLayout.createSequentialGroup()
                 .addContainerGap()
@@ -3205,7 +3163,7 @@ public class FSelect extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLDisciplina1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTFSelectEdit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTFDisciplinaEdit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19)
                 .addComponent(jLNtFinal1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3471,31 +3429,6 @@ public class FSelect extends javax.swing.JFrame {
             Logger.getLogger(FSelect.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jBDelActionPerformed
-
-    private void jBAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAtualizarActionPerformed
-        try {
-            ArrayList<Aluno_VO> alu = new ArrayList<>();
-
-            if (alunoRN.listaAlunos(alu)){
-                int x = alu.size();
-                String text = "inicio";
-                for (int i = 1; i <= x; i++) {
-                    text = text + "\n----------------------\n"
-                    + "GRR: " + alu.get(i).getCpf()
-                    + "\nNome: " + alu.get(i).getNome()
-                    + "\nCPF: " + alu.get(i).getCpf()
-                    + "\n----------------------\n";
-                }
-                jTAList.setText(text);
-            }
-        } catch (Exception e) {
-            Logger.getLogger(FSelect.class.getName()).log(Level.SEVERE, null, e);
-        }
-    }//GEN-LAST:event_jBAtualizarActionPerformed
-
-    private void jPanel7FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPanel7FocusGained
-
-    }//GEN-LAST:event_jPanel7FocusGained
 
     private void jBInserirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBInserirActionPerformed
         try {
@@ -4062,14 +3995,14 @@ public class FSelect extends javax.swing.JFrame {
     private void jBInserir4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBInserir4ActionPerformed
 
         try {
-            historicoVO.setDisciplina(this.jTFSelect.getText());
+            historicoVO.setDisciplina(this.jTFDisciplina.getText());
             historicoVO.setNota_final(this.jTFNtFinal.getText());
             historicoVO.setSituacao(this.jTFSituacao.getText());
             historicoVO.setNum_vezes_cursado(this.jTFVzCursada.getText());
             historicoVO.setFK_GRR(this.jTFGRR.getText());
 
             if(historicoRN.inserirHistorico(historicoVO)){
-                this.jTFSelectEdit.setText(historicoVO.getDisciplina());
+                this.jTFDisciplinaEdit.setText(historicoVO.getDisciplina());
                 this.jTFNtFinalEdit.setText(historicoVO.getNota_final());
                 this.jTFSituacaoEdit.setText(historicoVO.getSituacao());
                 this.jTFVzCursadaEdit.setText(historicoVO.getNum_vezes_cursado());
@@ -4088,7 +4021,7 @@ public class FSelect extends javax.swing.JFrame {
 
     private void jBEditar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEditar4ActionPerformed
         try {
-            historicoVO.setDisciplina(this.jTFSelectEdit.getText());
+            historicoVO.setDisciplina(this.jTFDisciplinaEdit.getText());
             historicoVO.setNota_final(this.jTFNtFinalEdit.getText());
             historicoVO.setSituacao(this.jTFSituacaoEdit.getText());
             historicoVO.setNum_vezes_cursado(this.jTFVzCursadaEdit.getText());
@@ -4096,7 +4029,7 @@ public class FSelect extends javax.swing.JFrame {
             historicoVO.setPK_historico(this.jTFPkHistorico.getText());
 
             if(historicoRN.editarHistorico(historicoVO)){
-                this.jTFSelect.setText(historicoVO.getDisciplina());
+                this.jTFDisciplina.setText(historicoVO.getDisciplina());
                 this.jTFNtFinal.setText(historicoVO.getNota_final());
                 this.jTFSituacao.setText(historicoVO.getSituacao());
                 this.jTFVzCursada.setText(historicoVO.getNum_vezes_cursado());
@@ -4123,12 +4056,12 @@ public class FSelect extends javax.swing.JFrame {
                     +"\nSituacao: " + historicoVO.getSituacao()
                     +"\nVezes Cursada: " + historicoVO.getNum_vezes_cursado()
                     +"\nGRR: " + historicoVO.getFK_GRR());
-                this.jTFSelect.setText(historicoVO.getDisciplina());
+                this.jTFDisciplina.setText(historicoVO.getDisciplina());
                 this.jTFNtFinal.setText(historicoVO.getNota_final());
                 this.jTFSituacao.setText(historicoVO.getSituacao());
                 this.jTFVzCursada.setText(historicoVO.getNum_vezes_cursado());
                 this.jTFGRR.setText(historicoVO.getFK_GRR());
-                this.jTFSelectEdit.setText(historicoVO.getDisciplina());
+                this.jTFDisciplinaEdit.setText(historicoVO.getDisciplina());
                 this.jTFNtFinalEdit.setText(historicoVO.getNota_final());
                 this.jTFSituacaoEdit.setText(historicoVO.getSituacao());
                 this.jTFVzCursadaEdit.setText(historicoVO.getNum_vezes_cursado());
@@ -4154,12 +4087,12 @@ public class FSelect extends javax.swing.JFrame {
                     +"\nSituacao: " + historicoVO.getSituacao()
                     +"\nVezes Cursada: " + historicoVO.getNum_vezes_cursado()
                     +"\nGRR: " + historicoVO.getFK_GRR());
-                this.jTFSelect.setText(historicoVO.getDisciplina());
+                this.jTFDisciplina.setText(historicoVO.getDisciplina());
                 this.jTFNtFinal.setText(historicoVO.getNota_final());
                 this.jTFSituacao.setText(historicoVO.getSituacao());
                 this.jTFVzCursada.setText(historicoVO.getNum_vezes_cursado());
                 this.jTFGRR.setText(historicoVO.getFK_GRR());
-                this.jTFSelectEdit.setText(historicoVO.getDisciplina());
+                this.jTFDisciplinaEdit.setText(historicoVO.getDisciplina());
                 this.jTFNtFinalEdit.setText(historicoVO.getNota_final());
                 this.jTFSituacaoEdit.setText(historicoVO.getSituacao());
                 this.jTFVzCursadaEdit.setText(historicoVO.getNum_vezes_cursado());
@@ -4697,7 +4630,6 @@ public class FSelect extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBAtualizar;
     private javax.swing.JButton jBBuscar;
     private javax.swing.JButton jBBuscar1;
     private javax.swing.JButton jBBuscar2;
@@ -4922,7 +4854,6 @@ public class FSelect extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel51;
     private javax.swing.JPanel jPanel52;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JPanel jPanelBuscar;
@@ -4945,7 +4876,6 @@ public class FSelect extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane21;
     private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane23;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
@@ -4971,7 +4901,6 @@ public class FSelect extends javax.swing.JFrame {
     private javax.swing.JTextArea jTAExcluir6;
     private javax.swing.JTextArea jTAExcluir7;
     private javax.swing.JTextArea jTAExcluir8;
-    private javax.swing.JTextArea jTAList;
     private javax.swing.JTextArea jTAbuscar;
     private javax.swing.JTextField jTFCep;
     private javax.swing.JTextField jTFCepEdit;
@@ -4985,8 +4914,8 @@ public class FSelect extends javax.swing.JFrame {
     private javax.swing.JTextField jTFCoordenadorEdit;
     private javax.swing.JTextField jTFData;
     private javax.swing.JTextField jTFDataEdit;
-    private javax.swing.JTextField jTFSelect;
-    private javax.swing.JTextField jTFSelectEdit;
+    private javax.swing.JTextField jTFDisciplina;
+    private javax.swing.JTextField jTFDisciplinaEdit;
     private javax.swing.JTextField jTFFKIdSetor;
     private javax.swing.JTextField jTFFKIdSetorEdit;
     private javax.swing.JTextField jTFFkIdDepartamenoEdit;
