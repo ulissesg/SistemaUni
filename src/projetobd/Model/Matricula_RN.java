@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 /**
  *
@@ -80,4 +81,27 @@ public class Matricula_RN {
             throw new Exception("Falha ao excluir da matricula: \n" + e.getMessage());
         }
     }
+    
+    public boolean listaMatricula(List<Matricula_VO> Alunos) throws Exception
+       {
+              try
+              {
+                     conex = new Conexao();
+                     Statement stm = conex.conectar().createStatement();
+
+                     ResultSet rs = stm.executeQuery("p_matricula_selectall");
+                     while (rs.next())
+                     {
+                        Matricula_VO MatriculaVO = new Matricula_VO();
+                        MatriculaVO.setFKGrr(rs.getString("FK_GRR"));
+                        MatriculaVO.setFKIDTurma(rs.getString("FK_IDturma"));
+                        Alunos.add(MatriculaVO);
+                     }
+                     return true;
+              }
+              catch (SQLException e)
+              {
+                     throw new Exception("Falha ao listar as matriculas:\n"+e.getMessage());
+              }
+       }
 }

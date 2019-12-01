@@ -8,6 +8,7 @@ package projetobd.Model;
 import java.sql.*;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -155,4 +156,29 @@ public class Aluno_RN {
               return false;
        }
 //------------------------------------------------------------------------------
+//       Lista alunos
+       public boolean listaAlunos(List<Aluno_VO> Alunos) throws Exception
+       {
+              try
+              {
+                     conex = new Conexao();
+                     Statement stm = conex.conectar().createStatement();
+
+                     ResultSet rs = stm.executeQuery("p_aluno_selectall");
+                     while (rs.next())
+                     {
+                        Aluno_VO alunoVO = new Aluno_VO();
+                        alunoVO.setNome(rs.getString("NOME"));
+                        alunoVO.setCpf(rs.getString("CPF"));
+                        alunoVO.setSenha(rs.getString("SENHA"));
+                        alunoVO.setPk_grr(rs.getString("PK_GRR"));
+                        Alunos.add(alunoVO);
+                     }
+                     return true;
+              }
+              catch (SQLException e)
+              {
+                     throw new Exception("Falha na busca de gerente:\n"+e.getMessage());
+              }
+       }
 }
